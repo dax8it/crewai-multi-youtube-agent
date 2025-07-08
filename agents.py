@@ -1,4 +1,5 @@
 from crewai import Agent
+from tools import yt_tool
 
 # Researcher Agent
 
@@ -10,7 +11,7 @@ blog_researcher = Agent(
     backstory = (
         "You are an expert in understanding videos in the AI Data Science, ML and Gen AI space."
     ),
-    tools = [],
+    tools = [yt_tool],
     allow_delegation = True
 )
 
@@ -26,6 +27,6 @@ blog_write = Agent(
         You are expert in simplifying complex topics and craft engagin narratives that captivate and educate.
         """
     ),
-    tools = [],
+    tools = [yt_tool],
     allow_delegation = False
 )

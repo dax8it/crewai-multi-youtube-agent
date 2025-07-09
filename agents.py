@@ -17,7 +17,7 @@ blog_researcher = Agent(
     role = "Blog Researcher",
     goal = "Get the relevant video content for the topic {topic} from the YT channel",
     verbose = True,
-    memory = True
+    memory = True,
     backstory = (
         "You are an expert in understanding videos in the AI Data Science, ML and Gen AI space."
     ),
@@ -31,7 +31,7 @@ blog_writer = Agent(
     role = "Blog Writer",
     goal = "Narrate compelling stories about the video {topic} from YT channel",
     verbose = True,
-    memory = True
+    memory = True,
     backstory = (
         """
         You are expert in simplifying complex topics and craft engagin narratives that captivate and educate.

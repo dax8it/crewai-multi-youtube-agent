@@ -1,5 +1,15 @@
 from crewai import Agent
 from tools import yt_tool
+import os 
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
+os.environ['OPENAI_MODEL_NAME'] = "gpt-4o-mini"
+
+
 
 # Researcher Agent
 
@@ -17,7 +27,7 @@ blog_researcher = Agent(
 
 # Content Writer Agent
 
-blog_write = Agent(
+blog_writer = Agent(
     role = "Blog Writer",
     goal = "Narrate compelling stories about the video {topic} from YT channel",
     verbose = True,

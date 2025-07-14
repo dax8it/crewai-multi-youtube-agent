@@ -22,7 +22,7 @@ This project uses two AI agents working in sequence:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/Tusharbecoding/multi-youtube-agent
+   git clone https://github.com/dax8it/multi-youtube-agent
    cd multi-youtube-agent
    ```
 
